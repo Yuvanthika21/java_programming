@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the first string: ");
+        if (scanner.nextLine().contains(scanner.nextLine()))
+        {
+            System.out.println("The first string contains the second string.");
+        } else {
+            System.out.println("The first string does not contain the second string.");
+        }
+        scanner.close();
+    }
+}
