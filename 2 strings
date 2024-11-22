@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) 
+    {
+        String[] strings = {"hello", "world", "java", "programming", "code", "example"};
+        for (String str : strings)
+        {
+            if (str.length() % 2 == 0)
+            {
+                System.out.println(str);
+            }
+        }
+    }
+}
