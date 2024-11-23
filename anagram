@@ -1,0 +1,18 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first string: ");
+        String str1 = sc.nextLine().replaceAll("\\s+", "").toLowerCase();
+        System.out.print("Enter the second string: ");
+        String str2 = sc.nextLine().replaceAll("\\s+", "").toLowerCase();
+        
+        System.out.println(str1.length() == str2.length() && 
+            Arrays.equals(str1.chars().sorted().toArray(), str2.chars().sorted().toArray()) 
+            ? "The strings are anagrams." : "The strings are not anagrams.");
+        
+        sc.close();
+    }
+}
