@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Main string: ");
+        String main = sc.nextLine();
+        System.out.print("Insert string: ");
+        String insert = sc.nextLine();
+        System.out.print("Position: ");
+        int pos = sc.nextInt();
+        
+        if (pos < 0 || pos > main.length()) {
+            System.out.println("Invalid position");
+        } else {
+            System.out.println(main.substring(0, pos) + insert + main.substring(pos));
+        }
+        sc.close();
+    }
+}
