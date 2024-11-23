@@ -1,0 +1,7 @@
+public class Main{
+    public static void main(String[] args) {
+        String str = "SATHYABAMA";
+        char character = str.charAt(5);  
+        System.out.println("Character at index 5: " + character);
+    }
+}
