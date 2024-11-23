@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner(System.in);
+        System.out.print("enter string 1 : ");
+        String st1 = sc.nextLine();
+        System.out.print("enter string 2 : ");
+        String st2 = sc.nextLine();
+        st1=st1 + st2;
+        st2 = st1.substring(0, st1.length() - st2.length());  
+        st1 = st1.substring(st2.length());
+        System.out.print("After swapping \n string 1 : "+st1);
+        System.out.println("\n string 2 : "+st2);
+    }
+}
