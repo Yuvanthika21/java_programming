@@ -1,0 +1,77 @@
+import java.util.*;
+
+public class Employee {
+    int id;
+    String name, city, role;
+    float salary;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Employee emp = new Employee();
+
+        System.out.print("Enter Employee ID: ");
+        emp.setId(sc.nextInt());
+        sc.nextLine(); 
+
+        System.out.print("Enter Employee Name: ");
+        emp.setName(sc.nextLine());
+
+        System.out.print("Enter Employee City: ");
+        emp.setCity(sc.nextLine());
+
+        System.out.print("Enter Employee Role: ");
+        emp.setRole(sc.nextLine());
+
+        System.out.print("Enter Employee Salary: ");
+        emp.setSalary(sc.nextFloat());
+
+        System.out.println("\nEmployee Details:");
+        System.out.println("ID: " + emp.getId());
+        System.out.println("Name: " + emp.getName());
+        System.out.println("City: " + emp.getCity());
+        System.out.println("Role: " + emp.getRole());
+        System.out.println("Salary: " + emp.getSalary());
+
+        sc.close();
+    }
+}
